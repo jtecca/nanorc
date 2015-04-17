@@ -1,26 +1,11 @@
-Unmaintained
-============
-
-I am no longer using nano as my editor and hence have little motivation
-to continue working on this project. It remains available on GitHub for
-archival purposes only.
-
-Everything in the repository is in the Public Domain. Feel free to fork
-it and/or use the files for any purpose.
-
-P.S. I highly recommend [dex](https://github.com/tihirvon/dex) as a
-simple but much more capable editor.
-
-
-------
-
-
-Description
+NANORC
 -----------
 
 The syntax highlighting definitions that come bundled with nano are of
 pretty poor quality. This is an attempt at providing a good set of accurate
 syntax definitions to replace and expand the defaults.
+
+This repo was forked from github.com/nanorc/nanorc
 
 Installation
 ------------
@@ -53,6 +38,10 @@ specify it when installing, using `make install TEXT=color`, where
 After installation, the various source code samples in the `examples`
 directory can be used to check that highlighting is working correctly.
 If it doesn't work as expected, see the FAQ below.
+
+You'll need to manually copy the .nanorc file to `$HOME` if you don't
+already have existing customizations. Otherwise, choose the appropriate
+`include` directive as described above.
 
 Theme System
 ------------

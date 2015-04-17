@@ -1,0 +1,16 @@
+# a tiny nanorc
+set autoindent
+unset backup		# explicitly do not make backups
+unset boldtext      # cmder doesnt support 'bold' text
+unset casesensitive	# search without worrying about case
+set regexp          # use regexp when searching
+set fill "80"
+set const           # display the cursor position in the status bar
+set mouse           # not sure if this works
+set smooth          # smooth scrolling
+set softwrap
+set tabsize "4"
+set tabstospaces
+
+# load all syntax highlighting files
+include ~/.nano/syntax/ALL.nanorc
