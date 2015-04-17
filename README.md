@@ -1,14 +1,24 @@
-NANORC
------------
+Nanorc
+------
 
 The syntax highlighting definitions that come bundled with nano are of
 pretty poor quality. This is an attempt at providing a good set of accurate
 syntax definitions to replace and expand the defaults.
 
-This repo was forked from github.com/nanorc/nanorc
+This repo was forked from https://github.com/nanorc/nanorc
 
 Installation
 ------------
+
+If you don't already have an existing .nanorc file in `$HOME`, you'll need
+to manually copy the .nanorc file in this repo to `$HOME`.
+
+    cp .nanorc ~
+
+This file has a minimal set of configurations and is already set to include
+all syntax files in the default local install directory after running
+`make install`. Otherwise, add the appropriate `include` directive as
+described below to an existing .nanorc.
 
 Using `make install` will install the syntax definitions to the
 `~/.nano/syntax/` directory.
@@ -38,10 +48,6 @@ specify it when installing, using `make install TEXT=color`, where
 After installation, the various source code samples in the `examples`
 directory can be used to check that highlighting is working correctly.
 If it doesn't work as expected, see the FAQ below.
-
-You'll need to manually copy the .nanorc file to `$HOME` if you don't
-already have existing customizations. Otherwise, choose the appropriate
-`include` directive as described above.
 
 Theme System
 ------------
@@ -131,7 +137,7 @@ For more information, please refer to <http://unlicense.org/>
 
 [GNU nano]: http://www.nano-editor.org/
 [nanorc]: http://www.nano-editor.org/dist/v2.3/nanorc.5.html
-[theme.sed]: https://github.com/nanorc/nanorc/tree/master/theme.sed
-[mixins.sed]: https://github.com/nanorc/nanorc/tree/master/mixins.sed
-[mixins]: https://github.com/nanorc/nanorc/tree/master/mixins
+[theme.sed]: https://github.com/jtecca/nanorc/tree/master/theme.sed
+[mixins.sed]: https://github.com/jtecca/nanorc/tree/master/mixins.sed
+[mixins]: https://github.com/jtecca/nanorc/tree/master/mixins
 [ERE]: http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap09.html#tag_09_04
